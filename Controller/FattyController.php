@@ -22,6 +22,7 @@ class FattyController extends FattyAppController {
      *
      */
     public function index($page = 1){
+        $this->layout = 'fatty';
         $limit = Configure::read('Fatty.log_limit');
         $skip = $limit * ($page - 1);
 
